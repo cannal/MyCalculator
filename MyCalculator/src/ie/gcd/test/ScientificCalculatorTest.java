@@ -1,6 +1,7 @@
 package ie.gcd.test;
 
 import static org.junit.Assert.*;
+import ie.gcd.maths.ScientificCalculator;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -23,7 +24,9 @@ public class ScientificCalculatorTest {
 
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		ScientificCalculator c = new ScientificCalculator();
+		assertEquals(5, c.add(2, 3));
+		
 	}
 
 }
